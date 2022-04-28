@@ -1,0 +1,13 @@
+cloud:
+  aws:
+    stack:
+      auto: false
+    region:
+      static: ap-northeast-2
+    sqs:
+      queue:
+        name: example-queue
+        url: https://sqs.ap-northeast-2.amazonaws.com/848568422075/example-queue
+    credentials:
+      access-key: AKIA4LEU6R25RJUI3NFL
+      secret-key: 3+Tj/5UEGrxmBm00MDemuOjr4+22AMaBR1AGJCB8
