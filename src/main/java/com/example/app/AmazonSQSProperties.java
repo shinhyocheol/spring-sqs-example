@@ -10,7 +10,5 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix = "cloud.aws.sqs.queue")
 public class AmazonSQSProperties {
-
     private String url;
-
 }

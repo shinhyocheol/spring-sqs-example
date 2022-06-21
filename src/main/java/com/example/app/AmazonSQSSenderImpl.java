@@ -15,13 +15,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class AmazonSQSSenderImpl implements AmazonSQSSender{
 
-   private QueueMessagingTemplate queueMessagingTemplate;
+    private QueueMessagingTemplate queueMessagingTemplate;
 
-   @Autowired
-   public AmazonSQSSenderImpl(AmazonSQS amazonSQS) {
-       this.queueMessagingTemplate = new QueueMessagingTemplate((AmazonSQSAsync) amazonSQS);
-   }
-
+    @Autowired
+    public AmazonSQSSenderImpl(AmazonSQS amazonSQS) {
+        this.queueMessagingTemplate = new QueueMessagingTemplate((AmazonSQSAsync) amazonSQS);
+    }
 
     @Override
     public void send(String message) throws Exception {
@@ -31,5 +30,4 @@ public class AmazonSQSSenderImpl implements AmazonSQSSender{
 
         queueMessagingTemplate.send("example-queue", payload);
     }
-
 }
