@@ -9,8 +9,8 @@ cloud:
         name: example-queue
         url: https://sqs.ap-northeast-2.amazonaws.com/848568422075/example-queue
     credentials:
-      access-key: AKIA4LEU6R25QJZGDQZ6
-      secret-key: SD1uK4vTv/OsVCRsmpGSgKmbpuw2OXQAAJ2mQeR0
+      access-key:
+      secret-key: 
 logging:
   pattern:
     console: '%d{yyyy-MM-dd HH:mm:ss} %-5level --- [%thread] %logger{35} : %msg %n'
