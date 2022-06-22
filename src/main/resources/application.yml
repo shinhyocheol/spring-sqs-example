@@ -11,3 +11,6 @@ cloud:
     credentials:
       access-key: AKIA4LEU6R25RJUI3NFL
       secret-key: 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
+logging:
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss} %-5level --- [%thread] %logger{35} : %msg %n'
